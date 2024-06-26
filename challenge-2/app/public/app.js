@@ -19,7 +19,7 @@ async function saveText() {
     list.innerHTML = ''; // Clear existing list
     texts.forEach((text) => {
       const item = document.createElement('li');
-      item.textContent = text;
+      item.textContent = `${text.content}`; // Display specific properties
       list.appendChild(item);
     });
   }
