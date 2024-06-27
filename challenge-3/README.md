@@ -17,6 +17,9 @@ challenge-3
 └── README.md
 ```
 
+## Prerequisites
+- [Docker](https://docs.docker.com/get-docker/) installed on your system
+- [Node.js](https://nodejs.org/) installed on your system
 
 ## Clone the Repository
 1. Clone this repository: `git clone https://github.com/juliafmorgado/cloud-native-dev.git`
