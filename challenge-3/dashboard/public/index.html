@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+</head>
+<body>
+  <h1>Dashboard</h1>
+  <p id="textCount">Text Count: Loading...</p>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    const socket = io('http://localhost:3001');
+
+    socket.on('connect', () => {
+      console.log('Connected to server');
+    });
+
+    socket.on('textCount', (data) => {
+      document.getElementById('textCount').textContent = `Text Count: ${data.count}`;
+    });
+
+    socket.on('disconnect', () => {
+      console.log('Disconnected from server');
+    });
+  </script>
+</body>
+</html>

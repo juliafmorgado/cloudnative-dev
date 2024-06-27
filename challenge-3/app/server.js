@@ -6,7 +6,11 @@ const PORT = 3000;
 
 // Configure PostgreSQL connection
 const pool = new Pool({
-  database: 'challenge2', // Replace with your database name
+  user: 'postgres',
+  host: 'db', 
+  database: 'challenge3',
+  password: 'password',
+  port: 5432,
 });
 
 // Middleware to parse JSON bodies
