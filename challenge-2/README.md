@@ -7,7 +7,7 @@ This branch of the repository contains implementations to store text data using 
 ### File System (fs)
 The fs branch stores text data using file system APIs provided by Node.js. This approach demonstrates basic file handling and persistence techniques.
 ### SQL Database (sql)
-The sql branch stores text data in a table within an SQL database. You can choose any SQL database of your choice, with PostgreSQL being recommended. This approach showcases integrating a database into a Node.js application for data storage.
+The sql branch stores text data in a table within an SQL database in your local machine. You can choose any SQL database of your choice, with PostgreSQL being recommended. This approach showcases integrating a database into a Node.js application for data storage.
 
 ## Instructions
 
