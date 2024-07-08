@@ -1,0 +1,7 @@
+-- init.sql
+CREATE TABLE IF NOT EXISTS texts (
+    id SERIAL PRIMARY KEY,
+    content TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
