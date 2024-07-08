@@ -27,23 +27,14 @@ challenge-3
 1. Clone this repository: `git clone https://github.com/juliafmorgado/cloud-native-dev.git`
 2. Navigate to the challenge-3 directory: `cd challenge-3`
 
-## Setting Up the PostgreSQL Database
+## Build and run Docker containers
 1. Ensure Docker is installed on your system.
-2. Navigate to the `challenge-3` directory and start the PostgreSQL container:
-   `docker-compose up -d`
-
-## Running the Main Application
-1. Navigate to the `app` directory: `cd app`
-2. Install the dependencies: `npm install`
-3. Start the application: `node server.js`
-The application will be running on http://localhost:3000.
-
-## Running the Dashboard Application
-1. Navigate to the `dashboard` directory: `cd dashboard`
-2. Install the dependencies: `npm install`
-3. Start the application: `node server.js`
-The application will be running on http://localhost:3001.
+2. Start containers for your PostgreSQL database (db), Node.js application (app), and Node.js dashboard (dashboard):
+   `docker-compose up --build`
 
 ## Interacting with the Applications
 - You can interact with the main application at http://localhost:3000.
 - The dashboard displaying the text count will be available at http://localhost:3001.
+
+## Stop running Docker containers:
+To stop the running containers: `docker-compose down`
