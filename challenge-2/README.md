@@ -19,7 +19,7 @@ The sql branch stores text data in a table within an SQL database in your local 
 2. Navigate to the `challenge-2` directory: `cd challenge-2`
 3. Switch to the `fs` or `sql` branch: `git checkout fs` or `git checkout sql`
 4. Install dependencies: `npm install`
-5. Start the server: `node app/server.js`
+5. Start the server: `node server.js`
 6. Open `http://localhost:3000` in your web browser
 
 ### Test
