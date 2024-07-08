@@ -29,7 +29,7 @@ challenge-3
 
 ## Build and run Docker containers
 1. Ensure Docker is installed on your system.
-2. Start containers for your PostgreSQL database (db), Node.js application (app), and Node.js dashboard (dashboard):
+2. Use `docker-compose` to build and start the containers. This will set up the PostgreSQL database, the app, and the dashboard:
    `docker-compose up --build`
 
 ## Interacting with the Applications
