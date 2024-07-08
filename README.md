@@ -12,3 +12,7 @@ The challenges in this repository provide hands-on experience with tools and pra
 ### Challenge 2: Store Texts in File System and SQL Database
 - [Source code](https://github.com/juliafmorgado/cloudnative-dev/tree/main/challenge-2)
 - [Blog post](https://www.juliafmorgado.com/posts/challenge-2-application-persistence-with-fs-sql-db/)
+
+### Challenge 3: Create Real-Time Web Applications with Docker and PostgreSQL
+- [Source code](https://github.com/juliafmorgado/cloudnative-dev/tree/main/challenge-3)
+- [Blog post](https://www.juliafmorgado.com/posts/challenge-3-creating-real-time-web-applications-with-docker-and-postgresql/)
