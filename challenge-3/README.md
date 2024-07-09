@@ -30,7 +30,8 @@ challenge-3
 ## Build and run Docker containers
 1. Ensure Docker is installed on your system.
 2. Use `docker-compose` to build and start the containers. This will set up the PostgreSQL database, the app, and the dashboard:
-   `docker-compose up --build`
+
+`docker-compose up --build`
 
 ## Interacting with the Applications
 - You can interact with the main application at http://localhost:3000.
