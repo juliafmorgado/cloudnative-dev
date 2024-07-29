@@ -40,4 +40,4 @@ challenge-3
 ## Stop running Docker containers:
 To stop the running containers: `docker compose down`
 
-* Side note: If you're using the Docker Compose V1, you will need a a hyphen (-) between 'docker' and 'compose'. But since July 2023 Dcoker Compose V1 stopped receiving updates. It’s also no longer available in new releases of Docker Desktop. Read more about it [here](https://docs.docker.com/compose/migrate/).
+> Side note: If you're using the Docker Compose V1, you will need a a hyphen (-) between 'docker' and 'compose'. But since July 2023 Dcoker Compose V1 stopped receiving updates. It’s also no longer available in new releases of Docker Desktop. Read more about it [here](https://docs.docker.com/compose/migrate/).
