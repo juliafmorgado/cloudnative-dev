@@ -29,13 +29,15 @@ challenge-3
 
 ## Build and run Docker containers
 1. Ensure Docker is installed on your system.
-2. Use `docker-compose` to build and start the containers. This will set up the PostgreSQL database, the app, and the dashboard:
+2. Use `docker compose` to build and start the containers. This will set up the PostgreSQL database, the app, and the dashboard:
 
-`docker-compose up --build`
+`docker compose up --build`
 
 ## Interacting with the Applications
 - You can interact with the main application at http://localhost:3000.
 - The dashboard displaying the text count will be available at http://localhost:3001.
 
 ## Stop running Docker containers:
-To stop the running containers: `docker-compose down`
+To stop the running containers: `docker compose down`
+
+* Side note: If you're using the Docker Compose V1, you will need a a hyphen (-) between 'docker' and 'compose'. But since July 2023 Dcoker Compose V1 stopped receiving updates. It’s also no longer available in new releases of Docker Desktop. Read more about it [here](https://docs.docker.com/compose/migrate/).
