@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: app
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: app
@@ -18,5 +18,11 @@ spec:
         ports:
         - containerPort: 3000
         env:
-        - name: DATABASE_URL
-          value: "postgres://postgres:password@db:5432/challenge4"
+        - name: DB_HOST
+          value: db
+        - name: DB_USER
+          value: postgres
+        - name: DB_PASSWORD
+          value: password
+        - name: DB_NAME
+          value: challenge4
