@@ -1,0 +1,46 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: postgres
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: postgres
+  template:
+    metadata:
+      labels:
+        app: postgres
+    spec:
+      containers:
+      - name: postgres
+        image: postgres:15
+        env:
+        - name: POSTGRES_USER
+          value: "postgres"
+        - name: POSTGRES_PASSWORD
+          value: "password"
+        - name: POSTGRES_DB
+          value: "challenge4"
+        ports:
+        - containerPort: 5432
+        volumeMounts:
+        - name: postgres-data
+          mountPath: /var/lib/postgresql/data
+      initContainers:
+      - name: init-db
+        image: postgres:15
+        command: ['sh', '-c', 'psql -h localhost -U postgres -d challenge4 -f /docker-entrypoint-initdb.d/init.sql']
+        env:
+        - name: PGPASSWORD
+          value: "password"
+        volumeMounts:
+        - name: init-scripts
+          mountPath: /docker-entrypoint-initdb.d
+      volumes:
+      - name: postgres-data
+        emptyDir: {}
+      - name: init-scripts
+        configMap:
+          name: init-scripts
+
