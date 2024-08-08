@@ -2,6 +2,8 @@
 
 This branch of the repository contains implementations to store text data using two approaches: file system and SQL database. This challenge is part of the Cloud Native skills enhancement series by Salaboy found [here](https://github.com/salaboy/cloud-native-dev/tree/main).
 
+For a step-by-step guide and additional insights, check out my tutorial blog [here](https://www.juliafmorgado.com/posts/challenge-2-application-persistence-with-fs-sql-db/).
+
 ## Branches
 
 ### File System (fs)
