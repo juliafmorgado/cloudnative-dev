@@ -8,6 +8,7 @@ This challenge consists of adding a new application called `dashboard` that will
 As part of this challenge, the database selected should be running as a Docker container. Both applications should connect to that container.
 
 View Salaboy's challenge 3 instructions [here](https://github.com/salaboy/cloud-native-dev/tree/main/3).
+For a step-by-step guide and additional insights, check out my tutorial blog [here](https://www.juliafmorgado.com/posts/challenge-3-creating-real-time-web-applications-with-docker-and-postgresql/).
 
 ## Directory Structure
 
