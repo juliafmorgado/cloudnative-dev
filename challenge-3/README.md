@@ -16,6 +16,7 @@ challenge-3
 ├── app/ # The main application directory
 ├── dashboard/ # The dashboard application directory
 ├── docker-compose.yml
+├── init.sql # Database initialization script
 └── README.md
 ```
 
