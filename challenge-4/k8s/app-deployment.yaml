@@ -15,14 +15,8 @@ spec:
       containers:
       - name: app
         image: juliafmorgado/challenge-4-app:latest
+        env:
+        - name: DATABASE_URL
+          value: postgres://postgres:password@postgres:5432/challenge4
         ports:
         - containerPort: 3000
-        env:
-        - name: DB_HOST
-          value: db
-        - name: DB_USER
-          value: postgres
-        - name: DB_PASSWORD
-          value: password
-        - name: DB_NAME
-          value: challenge4

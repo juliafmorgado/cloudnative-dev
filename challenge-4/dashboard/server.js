@@ -11,7 +11,7 @@ const io = socketIo(server);
 
 const pool = new Pool({
   user: 'postgres',
-  host: 'db', // 'db' is the name of the service in docker-compose.yml
+  host: 'db',
   database: 'challenge4',
   password: 'password',
   port: 5432,
