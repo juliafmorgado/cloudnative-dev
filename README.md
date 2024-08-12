@@ -16,3 +16,7 @@ The challenges in this repository provide hands-on experience with tools and pra
 ### Challenge 3: Create Real-Time Web Applications with Docker and PostgreSQL
 - [Source code](https://github.com/juliafmorgado/cloudnative-dev/tree/main/challenge-3)
 - [Blog post](https://www.juliafmorgado.com/posts/challenge-3-creating-real-time-web-applications-with-docker-and-postgresql/)
+
+### Challenge 4: Deploying Applications to Kubernetes with KinD
+- [Source code](https://github.com/juliafmorgado/cloudnative-dev/tree/main/challenge-4)
+- [Blog post](https://www.juliafmorgado.com/posts/challenge-4-getting-your-app-to-kubernetes-with-kind/)
