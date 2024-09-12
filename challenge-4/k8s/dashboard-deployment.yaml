@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: dashboard
-        image: juliafmorgado/challenge-4-dashboard:latest
+        image: juliafmorgado/challenge-4-dashboard-env:latest
         env:
         - name: DATABASE_URL
           value: postgres://postgres:password@postgres:5432/challenge4
